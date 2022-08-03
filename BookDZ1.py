@@ -5,7 +5,7 @@
 добавлять, изменять, удалять или искать контактные
 данные ваших знакомых. Кроме того, эта информация также 
 должна сохраняться на диске для последующего доступа.
-Задача 2
+-Задача 2
 Реализуйте команду replace. Эта команда заменяет одну 
 строку другой в списке переданных ей файлов.'''
 
@@ -34,7 +34,8 @@ def FunCorrector1(var_answer0 = None):
 def FunViewer():
     ContList = FunCOpener()[0]
     for i in ContList:
-        print(i)
+        for vname, vphone in i.items():
+            print(vname,'->',vphone)
 
     FunMyMenu()###### time to change
     return 3
